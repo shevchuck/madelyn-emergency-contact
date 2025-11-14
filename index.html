@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emergency Contacts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Frozen-style Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(#b8e6ff, #d9f3ff, #ffffff);
+      font-family: "Marcellus SC", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #034b7b;
+      text-shadow: 0 1px 2px rgba(255,255,255,0.7);
+    }
+
+    .snowflakes {
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 28px 22px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 420px;
+      box-shadow: 0 0 25px rgba(0, 80, 140, 0.25);
+      border: 2px solid rgba(255,255,255,0.7);
+      backdrop-filter: blur(6px);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 8px 0 12px;
+      font-size: 2rem;
+      color: #034b7b;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #013d67;
+    }
+
+    .contact {
+      background: rgba(200, 230, 255, 0.6);
+      padding: 14px;
+      border-radius: 14px;
+      margin: 18px 0;
+      border: 1px solid rgba(255,255,255,0.8);
+    }
+
+    .label {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 4px;
+      color: #013d67;
+    }
+
+    .name {
+      font-size: 1rem;
+      margin-bottom: 6px;
+      color: #014f83;
+    }
+
+    a.phone {
+      font-size: 1rem;
+      padding: 10px 18px;
+      background: #e3f3ff;
+      border-radius: 999px;
+      text-decoration: none;
+      display: inline-block;
+      color: #036bb8;
+      border: 1px solid #b6d9ff;
+      font-weight: bold;
+    }
+
+    a.phone:active {
+      transform: scale(0.97);
+    }
+
+    .note {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: #013d67;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Snow overlay (visual softness, optional) -->
+  <div class="snowflakes"></div>
+
+  <div class="card">
+
+    <div class="intro">
+      My name is <strong>Madelyn Shevchuck</strong>
+    </div>
+
+    <h1>Emergency Contacts</h1>
+    <p style="font-size:0.9rem; margin-bottom: 8px;">Tap a number to call</p>
+
+    <div class="contact">
+      <div class="label">Dad</div>
+      <div class="name">Bryan Shevchuck</div>
+      <a class="phone" href="tel:+13025618239">Call 302-561-8239</a>
+    </div>
+
+    <div class="contact">
+      <div class="label">Mom</div>
+      <div class="name">Sherrie Shevchuck</div>
+      <a class="phone" href="tel:+13025091074">Call 302-509-1074</a>
+    </div>
+
+    <p class="note">If this child needs help, please call one of the numbers above.</p>
+  </div>
+</body>
+</html>
